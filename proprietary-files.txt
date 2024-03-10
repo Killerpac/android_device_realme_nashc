@@ -1124,60 +1124,9 @@ vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
-vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
+vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
-# Camera Feature Policy
-vendor/lib64/libmtkcam_featurepolicy.so|a30b8eb9ec899ce90629898b4893d906fa11552b|8c53ab87c7b3d71127bbfe5abfda3183b989f0eb
-
-# Camera configs
-odm/etc/camera/tonemap/tonemap/curve_lut_0
-odm/etc/camera/tonemap/tonemap/curve_lut_1
-odm/etc/camera/tonemap/tonemap/curve_lut_10
-odm/etc/camera/tonemap/tonemap/curve_lut_2
-odm/etc/camera/tonemap/tonemap/curve_lut_3
-odm/etc/camera/tonemap/tonemap/curve_lut_4
-odm/etc/camera/tonemap/tonemap/curve_lut_5
-odm/etc/camera/tonemap/tonemap/curve_lut_6
-odm/etc/camera/tonemap/tonemap/curve_lut_7
-odm/etc/camera/tonemap/tonemap/curve_lut_8
-odm/etc/camera/tonemap/tonemap/curve_lut_9
-odm/etc/camera/tonemap/tonemap/list.txt
-odm/etc/camera/tonemap/tonemap/s_curve_lut
-odm/etc/camera/tonemap/tonemap/tonemap_lut_0
-odm/etc/camera/tonemap/tonemap/tonemap_lut_1
-odm/etc/camera/tonemap/tonemap/tonemap_lut_10
-odm/etc/camera/tonemap/tonemap/tonemap_lut_2
-odm/etc/camera/tonemap/tonemap/tonemap_lut_3
-odm/etc/camera/tonemap/tonemap/tonemap_lut_4
-odm/etc/camera/tonemap/tonemap/tonemap_lut_5
-odm/etc/camera/tonemap/tonemap/tonemap_lut_6
-odm/etc/camera/tonemap/tonemap/tonemap_lut_7
-odm/etc/camera/tonemap/tonemap/tonemap_lut_8
-odm/etc/camera/tonemap/tonemap/tonemap_lut_9
-odm/etc/camera/tonemap/curve_lut_0
-odm/etc/camera/tonemap/curve_lut_1
-odm/etc/camera/tonemap/curve_lut_10
-odm/etc/camera/tonemap/curve_lut_2
-odm/etc/camera/tonemap/curve_lut_3
-odm/etc/camera/tonemap/curve_lut_4
-odm/etc/camera/tonemap/curve_lut_5
-odm/etc/camera/tonemap/curve_lut_6
-odm/etc/camera/tonemap/curve_lut_7
-odm/etc/camera/tonemap/curve_lut_8
-odm/etc/camera/tonemap/curve_lut_9
-odm/etc/camera/tonemap/list.txt
-odm/etc/camera/tonemap/s_curve_lut
-odm/etc/camera/tonemap/tonemap_lut_0
-odm/etc/camera/tonemap/tonemap_lut_1
-odm/etc/camera/tonemap/tonemap_lut_10
-odm/etc/camera/tonemap/tonemap_lut_2
-odm/etc/camera/tonemap/tonemap_lut_3
-odm/etc/camera/tonemap/tonemap_lut_4
-odm/etc/camera/tonemap/tonemap_lut_5
-odm/etc/camera/tonemap/tonemap_lut_6
-odm/etc/camera/tonemap/tonemap_lut_7
-odm/etc/camera/tonemap/tonemap_lut_8
-odm/etc/camera/tonemap/tonemap_lut_9
+# Camera (Configs)
 odm/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/anc_cl_kernel.cache
 odm/etc/camera/fb_default
@@ -1976,24 +1925,8 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
 # Power
 odm/etc/powerhal/power_app_cfg.xml
-vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 vendor/etc/init/bootperf.rc
 vendor/etc/init/init.fpsgo.rc
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
-vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
-vendor/lib/libperfctl_vendor.so
-vendor/lib/libpower_timer.so
-vendor/lib/libpowerhal.so
-vendor/lib/libpowerhalwrap_vendor.so
-vendor/lib/vendor.mediatek.hardware.power@2.0.so
-vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
-vendor/lib64/libmtkperf_client_vendor.so
-vendor/lib64/libperfctl_vendor.so
-vendor/lib64/libpower_timer.so
-vendor/lib64/libpowerhal.so
-vendor/lib64/libpowerhalwrap_vendor.so
-vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
 # RPMB
 odm/bin/rpmbengclient_test
@@ -2077,7 +2010,6 @@ vendor/lib/libmtkcutils.so
 vendor/lib/libmtkhardware_legacy.so
 vendor/lib/libmtklimiter_vendor.so
 vendor/lib/libmtknetutils.so
-vendor/lib/libmtkperf_client_vendor.so
 vendor/lib/libmtkproperty.so
 vendor/lib/libmtkrillog.so
 vendor/lib/libmtkshifter_vendor.so
