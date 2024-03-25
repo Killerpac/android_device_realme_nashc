@@ -420,6 +420,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service-lazy \
     wpa_supplicant \
     hostapd \
+    libwifi-hal-wrapper \
     libwifi-hal-mt66xx
 
 # Tetheroffload
