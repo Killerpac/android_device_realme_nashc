@@ -173,4 +173,3 @@
 
 subsystem adf
     devname uevent_devname
-
