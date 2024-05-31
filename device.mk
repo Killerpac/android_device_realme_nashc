@@ -308,10 +308,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
 # Power
-$(call inherit-product, hardware/oplus/power-libperfmgr/power-libperfmgr.mk)
-
 PRODUCT_PACKAGES += \
     android.hardware.power-V2-ndk_platform.vendor \
+    android.hardware.power-service.lineage-libperfmgr \
     android.hardware.power@1.2.vendor \
     libmtkperf_client_vendor \
     libmtkperf_client \
@@ -400,7 +399,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/mediatek \
-    hardware/oplus
+    hardware/oplus \
+    hardware/lineage/interfaces/power-libperfmgr
 
 # Thermal
 PRODUCT_PACKAGES += \
