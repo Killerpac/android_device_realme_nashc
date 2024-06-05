@@ -400,6 +400,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/mediatek \
     hardware/oplus \
+    hardware/mediatek/libmtkperf_client \
     hardware/lineage/interfaces/power-libperfmgr
 
 # Thermal
