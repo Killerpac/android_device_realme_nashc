@@ -256,8 +256,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 PRODUCT_PACKAGES += \
     WifiOverlay \
     TetheringConfigOverlay \
-    CarrierConfigOverlay \
-    OPlusExtrasResTarget
+    CarrierConfigOverlay 
 
 # Permissions
 PRODUCT_COPY_FILES += \
