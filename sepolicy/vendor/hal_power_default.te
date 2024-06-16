@@ -41,3 +41,5 @@ allow hal_power_default sysfs_fpsgo:file rw_file_perms;
 # Display
 allow hal_power_default vendor_proc_display:dir search;
 allow hal_power_default vendor_proc_display:file w_file_perms;
+
+allow hal_power_default proc:file { open };

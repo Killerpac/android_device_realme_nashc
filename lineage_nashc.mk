@@ -13,9 +13,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 $(call inherit-product, device/realme/nashc/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := voltage_nashc
+# Inherit some common Rising stuff.
+WITH_GMS := true
+TARGET_CORE_GMS := true
+RISING_CHIPSET="Helio G95"
+TARGET_ENABLE_BLUR := true
+
+# UDFPS ICONS/ANIMATIONS
+TARGET_HAS_UDFPS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# RisingOS Maintainer Flags
+RISING_MAINTAINER := ＳＡＮＩＣ
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RISING_MAINTAINER="ＳＡＮＩＣ"	
+
+PRODUCT_NAME := lineage_nashc
 PRODUCT_DEVICE := nashc
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := Realme
