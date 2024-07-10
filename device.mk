@@ -443,6 +443,8 @@ PRODUCT_PACKAGES += \
     libunwindstack.vendor \
     libutilscallstack.vendor
 
+PRODUCT_PACKAGES += \
+    libshim_ui
 
 # Wi-F
 PRODUCT_PACKAGES += \
