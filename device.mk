@@ -87,7 +87,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4.vendor \
     android.hardware.camera.provider@2.5.vendor \
     android.hardware.camera.provider@2.6.vendor \
-    libcamera2ndk_vendor
+    libcamera2ndk_vendor \
+    libexpat.vendor:64 \
+    libpng.vendor:64
 
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim
@@ -120,7 +122,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.2-service \
     android.hardware.memtrack-service.mediatek-mali \
     libdrm.vendor \
-    libdrm
+    libdrm \
+    libion.vendor \
+    libui.vendor
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -132,7 +136,8 @@ PRODUCT_PACKAGES += \
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
-    android.hardware.gatekeeper@1.0-impl
+    android.hardware.gatekeeper@1.0-impl \
+    libgatekeeper.vendor:64
 
 # GNSS
 PRODUCT_PACKAGES += \
@@ -146,6 +151,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.gnss-service.mediatek
+    libcurl.vendor:32
 
 # Health
 PRODUCT_PACKAGES += \
@@ -159,7 +165,8 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
-    libhwbinder.vendor
+    libhwbinder.vendor \
+    libhidlmemory.vendor:64
 
 # IMS
 PRODUCT_BOOT_JARS += \
@@ -187,7 +194,8 @@ PRODUCT_PACKAGES += \
     libkeymaster4support.vendor:64 \
     libsoft_attestation_cert.vendor:64 \
     libkeystore-wifi-hidl \
-    libkeystore-engine-wifi-hidl
+    libkeystore-engine-wifi-hidl \
+    libnetutils.vendor:64
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -430,6 +438,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so \
     prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so
+
+PRODUCT_PACKAGES += \
+    libunwindstack.vendor \
+    libutilscallstack.vendor
 
 
 # Wi-F
