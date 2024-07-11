@@ -88,8 +88,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5.vendor \
     android.hardware.camera.provider@2.6.vendor \
     libcamera2ndk_vendor \
-    libexpat.vendor:64 \
-    libpng.vendor:64
+    libexpat.vendor \
+    libpng.vendor \
+    libexif.vendor \
 
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim
@@ -150,8 +151,8 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor
 
 PRODUCT_PACKAGES += \
-    android.hardware.gnss-service.mediatek
-    libcurl.vendor:32
+    android.hardware.gnss-service.mediatek \
+    libcurl.vendor 
 
 # Health
 PRODUCT_PACKAGES += \
@@ -216,6 +217,7 @@ PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
     libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor \
+    libstagefrighthw.vendor \
     libcodec2_soft_common.vendor 
 
 PRODUCT_COPY_FILES += \
@@ -393,6 +395,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@2.0-service-multihal.nashc \
     als_correction_service.nashc \
+    libpower.vendor
 
 # Soundtrigger
 PRODUCT_PACKAGES += \
@@ -446,9 +449,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshim_ui
 
+# Add libdumpstateutil.so to PRODUCT_PACKAGES
+PRODUCT_PACKAGES += \
+    libdumpstateutil.vendor
+
 # Wi-F
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service-lazy \
+    android.hardware.wifi-service-lazy \
     wpa_supplicant \
     hostapd \
     libwifi-hal-wrapper
