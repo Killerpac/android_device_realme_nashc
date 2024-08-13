@@ -448,10 +448,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdumpstateutil.vendor
 
-# Bluetooth
-PRODUCT_VENDOR_PROPERTIES += \
-    bluetooth.hci.erroneous_data_reporting.enabled=false
-
 # Wi-F
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service-lazy \
